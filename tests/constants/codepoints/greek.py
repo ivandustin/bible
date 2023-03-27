@@ -1,0 +1,2 @@
+ALPHA = 0x0391
+OMEGA = 0x03A9
