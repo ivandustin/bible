@@ -1,34 +1,13 @@
 from pathlib import Path
 from pytest import fixture
-from pandas import Series
-from .functions.get_dataframe import get_dataframe
 from .constants.codepoints.hebrew import ALEF, TAV
 from .constants.alphabets.hebrew import MAPPING
+from .functions.ord_keys import ord_keys
 
 
 @fixture
-def dataframe():
-    return get_dataframe(Path("data/old"))
-
-
-@fixture
-def words(dataframe):
-    return dataframe["word"]
-
-
-@fixture
-def letters(words):
-    return Series([letter for word in words for letter in word])
-
-
-@fixture
-def codepoints(letters):
-    return letters.apply(ord)
-
-
-@fixture
-def mapping():
-    return dict(zip(map(ord, MAPPING.keys()), MAPPING.values()))
+def directory():
+    return Path("data/old")
 
 
 def test_encoding(codepoints):
@@ -43,5 +22,5 @@ def test_letter_count(letters):
     assert len(letters) == 1_197_042
 
 
-def test_total_value(codepoints, mapping):
-    assert codepoints.map(mapping).sum() == 78_091_408
+def test_total_value(codepoints):
+    assert codepoints.map(ord_keys(MAPPING)).sum() == 78_091_408
