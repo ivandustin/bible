@@ -1,4 +1,4 @@
-# bible
+# Bible
 
 Greek New Testament and Hebrew Old Testament in CSV format.
 
@@ -6,19 +6,9 @@ Greek New Testament and Hebrew Old Testament in CSV format.
 
 See the [data](data) folder.
 
-## Data Source
-
-Both the Old and New Testament data are from https://www.livinggreeknt.org/.
-
-According to them, the Old Testament data is from the Westminster Leningrad Codex, which is maintained by The J. Alan Groves Center for Advanced Biblical Research (https://www.grovescenter.org/).
-
-The New Testament data were produced by themselves using numerical analysis based on the data from the Center for New Testament Restoration (https://greekcntr.org/).
-
 ## Sample
 
-### New Testament
-
-Matthew
+### Matthew
 
 ```csv
 chapter,verse,word
@@ -33,9 +23,7 @@ chapter,verse,word
 1,2,ΑΒΡΑΑΜ
 ```
 
-### Old Testament
-
-Genesis
+### Genesis
 
 ```csv
 chapter,verse,word
@@ -50,9 +38,33 @@ chapter,verse,word
 1,2,היתה
 ```
 
-## Numbers
+## Statistics
 
-> **Reference:** https://www.livinggreeknt.org/
+|                      | New Testament | Old Testament |
+|----------------------|---------------|---------------|
+| Word Count           | 137,720       | 305,496       |
+| Letter Count         | 688,623       | 1,197,042     |
+| Total Numeric Value  | 79,384,882    | 78,091,408    |
+
+## Data Source
+
+Both the Old and New Testament data are from https://www.livinggreeknt.org/.
+
+According to them, the Old Testament data is from the Westminster Leningrad Codex, which is maintained by The J. Alan Groves Center for Advanced Biblical Research (https://www.grovescenter.org/).
+
+The New Testament data were produced by themselves using numerical analysis based on the data from the Center for New Testament Restoration (https://greekcntr.org/).
+
+## Concept
+
+> There are thousands of source manuscripts for the New Testament, but there are thousands of minor variations in those ancient documents. The variations are there because, prior to the invention of the printing press about 600 years ago, every version had to be hand-copied, and in the copying came errors. No original writings have been preserved. We have to start with what are copies of copies of copies.
+>
+> It is the work of textual critics to collect ancient manuscripts and to compare different versions and to decide on what they believe might be the divinely inspired text. How can they be sure? Who is to say that this is more accurate than that?
+>
+> However, we looked beneath the plain text. Every letter of the Greek alphabet has a numeric value. This means that the Greek text of the New Testament may also be seen as a mathematical document. We believe that this study of the underlying design provides verification of the original text.
+>
+> — https://www.livinggreeknt.org/
+
+## Numeric Values
 
 ### Greek
 
@@ -114,11 +126,3 @@ chapter,verse,word
 | ר      | 200           |
 | ש      | 300           |
 | ת      | 400           |
-
-### Totals
-
-|    Total       | New Testament | Old Testament |
-|----------------|---------------|---------------|
-| Word Count     | 137,720       | 305,496       |
-| Letter Count   | 688,623       | 1,197,042     |
-| Numeric Value  | 79,384,882    | 78,091,408    |
