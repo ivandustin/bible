@@ -38,13 +38,13 @@ chapter,verse,word
 1,2,היתה
 ```
 
-## Data Source
+## Statistics
 
-Both the New Testament and the Old Testament data are from https://www.livinggreeknt.org/.
-
-The New Testament data were produced by themselves using numerical analysis based on the data from the Center for New Testament Restoration (https://greekcntr.org/).
-
-According to them, the Old Testament data is from the Westminster Leningrad Codex, which is maintained by The J. Alan Groves Center for Advanced Biblical Research (https://www.grovescenter.org/).
+|                      | New Testament | Old Testament |
+|----------------------|---------------|---------------|
+| Word Count           | 137,720       | 305,496       |
+| Letter Count         | 688,623       | 1,197,042     |
+| Total Numeric Value  | 79,384,882    | 78,091,408    |
 
 ## Concept
 
@@ -56,19 +56,7 @@ According to them, the Old Testament data is from the Westminster Leningrad Code
 >
 > — https://www.livinggreeknt.org/
 
-## Statistics
-
-This information is from https://www.livinggreeknt.org/.
-
-|                      | New Testament | Old Testament |
-|----------------------|---------------|---------------|
-| Word Count           | 137,720       | 305,496       |
-| Letter Count         | 688,623       | 1,197,042     |
-| Total Numeric Value  | 79,384,882    | 78,091,408    |
-
 ## Numeric Values
-
-This information is from https://www.livinggreeknt.org/.
 
 ### Greek
 
@@ -130,3 +118,11 @@ This information is from https://www.livinggreeknt.org/.
 | ר      | 200           |
 | ש      | 300           |
 | ת      | 400           |
+
+## Data Source
+
+Both the New Testament and the Old Testament data are from https://www.livinggreeknt.org/.
+
+The New Testament data were produced by themselves using numerical analysis based on the data from the Center for New Testament Restoration (https://greekcntr.org/).
+
+According to them, the Old Testament data is from the Westminster Leningrad Codex, which is maintained by The J. Alan Groves Center for Advanced Biblical Research (https://www.grovescenter.org/).
